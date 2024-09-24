@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Inject
+@_exported import Inject
 @main
 struct DemoApp: App {
   @ObserveInjection var inject // 观察注入事件，强制视图重绘

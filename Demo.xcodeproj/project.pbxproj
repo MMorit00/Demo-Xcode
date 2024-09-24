@@ -27,6 +27,7 @@
 		B6108D902CA2589F0038FC07 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = B6108D8F2CA2589F0038FC07 /* Inject */; };
 		B64468E82CA25E7800FC34E3 /* Chinese.strings in Resources */ = {isa = PBXBuildFile; fileRef = B64468E72CA25E7800FC34E3 /* Chinese.strings */; };
 		B64468EA2CA25E8A00FC34E3 /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = B64468E92CA25E8A00FC34E3 /* English.strings */; };
+		B6BA16F12CAA0E090032695B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BA16F02CAA0E090032695B /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		B6108D8C2CA257DC0038FC07 /* File.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = File.xml; sourceTree = "<group>"; };
 		B64468E72CA25E7800FC34E3 /* Chinese.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Chinese.strings; sourceTree = "<group>"; };
 		B64468E92CA25E8A00FC34E3 /* English.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = English.strings; sourceTree = "<group>"; };
+		B6BA16F02CAA0E090032695B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				B6108D742CA2563B0038FC07 /* View.swift */,
+				B6BA16F02CAA0E090032695B /* SwiftUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			files = (
 				B6108D792CA256600038FC07 /* Model.swift in Sources */,
 				B6108D7F2CA257440038FC07 /* Service.swift in Sources */,
+				B6BA16F12CAA0E090032695B /* SwiftUIView.swift in Sources */,
 				B6108D5B2CA253AF0038FC07 /* ContentView.swift in Sources */,
 				B6108D892CA257850038FC07 /* test.swift in Sources */,
 				B6108D592CA253AF0038FC07 /* DemoApp.swift in Sources */,
@@ -449,6 +453,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = pan.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -478,6 +486,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = pan.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
